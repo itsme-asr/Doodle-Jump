@@ -5,7 +5,7 @@ using UnityEngine.UI;
 //using UnityEngine.EventSystems;
 public class Player : MonoBehaviour
 {
-    //[SerializeField] Text txt;
+    [SerializeField] GameObject panel;
     //[SerializeField] int points;
     //bool isAlive = true;
     private void OnCollisionEnter2D(Collision2D other)
@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
         if (other.gameObject.tag == "Death")
         {
             Destroy(gameObject);
+            panel.gameObject.SetActive(true);
+
         }
 
     }

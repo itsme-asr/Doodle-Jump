@@ -14,13 +14,7 @@ public class Player : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        // if (other.gameObject.tag == "Points")
-        // {
-        //     points++;
-        //     txt.text = " " + points;
-        //     Destroy(other.gameObject);
 
-        // }
     }
 
 }

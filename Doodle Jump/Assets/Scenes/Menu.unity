@@ -801,6 +801,7 @@ GameObject:
   - component: {fileID: 1683379396}
   - component: {fileID: 1683379395}
   - component: {fileID: 1683379394}
+  - component: {fileID: 1683379398}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -892,6 +893,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1683379398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683379393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b255203643bec64cb44f91ac51fe555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anchorType: 4
+  anchorOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &1714463451
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,6 +919,7 @@ GameObject:
   - component: {fileID: 1714463453}
   - component: {fileID: 1714463452}
   - component: {fileID: 1714463455}
+  - component: {fileID: 1714463456}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -946,7 +962,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.085
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -988,6 +1004,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f6c0c72b61fcdd4680f5851f7486ebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1714463456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714463451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a8023e77f9c21641a48ad0bce9dda30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wireColor: {r: 1, g: 1, b: 1, a: 1}
+  UnitsSize: 10.17
+  constraint: 1
+  camera: {fileID: 1714463453}
 --- !u!1 &1733411212
 GameObject:
   m_ObjectHideFlags: 0
